@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>NFT Marketplace</h1>
+    </header>
+    <main>
+        <section id="mint-nft">
+            <h2>Mint NFT</h2>
+            <form id="mint-form">
+                <input type="text" id="nft-metadata" placeholder="NFT Metadata" required>
+                <button type="submit">Mint NFT</button>
+            </form>
+        </section>
+        <section id="list-nft">
+            <h2>List NFT</h2>
+            <form id="list-form">
+                <input type="number" id="nft-id" placeholder="NFT ID" required>
+                <input type="number" id="nft-price" placeholder="Price" required>
+                <button type="submit">List NFT</button>
+            </form>
+        </section>
+        <section id="nft-marketplace">
+            <h2>Available NFTs</h2>
+            <div id="nft-list"></div>
+        </section>
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

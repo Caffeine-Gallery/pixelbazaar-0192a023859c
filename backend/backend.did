@@ -1,0 +1,15 @@
+type NFT = 
+ record {
+   metadata: text;
+   owner: principal;
+   price: nat;
+ };
+service : {
+  getListedNFTs: () -> (vec record {
+                              nat;
+                              NFT;
+                            }) query;
+  listNFT: (nat, nat) -> (bool);
+  mintNFT: (text) -> (nat);
+  purchaseNFT: (nat) -> (bool);
+}
